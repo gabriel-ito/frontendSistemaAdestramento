@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <div text-left class="inicio">
+    <h4 class="textoOla"></h4>
+    <br/>
+    <p class="textoBusca">Horários disponíveis</p>
+  </div>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ home }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-list lines="none">
+    <ion-card *ngFor="let dados of perguntas.dados">
+      <ion-item (click)="mostrarDetalhess(dados)">
+        <ion-label text-wrap>  
+          <h4>{{dados.dataAgenda | date: 'dd/MM/yyyy HH:mm'}}</h4>
+        </ion-label>  
+      </ion-item>  
+    </ion-card>
+  </ion-list>
+  
+</ion-content>
+

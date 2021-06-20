@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="container top"> 
+  </div>
+
+
+  <ion-slides>
+    <ion-slide>
+      <div class="slide-inner ion-padding">
+        <span>Nova pergunta</span>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="text" placeholder="Pergunta" [(ngModel)]="pergunta" name="pergunta"></ion-input>
+        </ion-item>
+
+        <ion-button class="ion-margin-top" (click)="registro()"  expand="block">
+          Enviar
+        </ion-button>
+
+        <ion-button class="ion-margin-top" (click)="telaPerguntas()" expand="block">
+          Voltar
+        </ion-button>
+
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+
+  <div class="ocean">
+    <div class="waves">
+      <div class="container bottom ion-text-center">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</ion-content>

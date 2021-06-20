@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <div text-left class="inicio">
+    <h4 class="textoOla"></h4>
+    <br/>
+    <p class="textoBusca">Horário selecionado</p>
+  </div>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ home }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-list lines="none">
+    <ion-card>
+      <ion-item>
+        <ion-label text-wrap>  
+          <h4>{{data.dataAgenda | date: 'dd/MM/yyyy HH:mm'}}</h4>
+        </ion-label>  
+      </ion-item>  
+    </ion-card>
+  </ion-list>
+
+  <ion-item class="ion-margin-top" lines="none">
+    <ion-input type="text" placeholder="Endereço que o adestrador vai" [(ngModel)]="observacao" name="observacao"></ion-input>
+  </ion-item>
+
+  <ion-button class="ion-margin-top" (click)="cadastrar()" expand="block">
+    Cadastrar atendimento
+  </ion-button>
+  
+</ion-content>

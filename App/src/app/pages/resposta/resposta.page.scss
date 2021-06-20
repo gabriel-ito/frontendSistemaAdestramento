@@ -1,0 +1,45 @@
+ion-content {
+
+    .inicio {
+      background-color: #B0C4DE;
+      margin-top: -16px;
+      height: 90px;
+      width: 100%;
+    }
+    
+    .botao {
+      margin-top: -30px;
+      height: 85px;
+      width: 110px;
+      padding: 5px 20px 10px 10px;
+      border-radius: 15px;
+    }
+    
+    .botoes {
+      text-align: center;
+    }
+    
+    .botoes2 {
+      margin-top: 35px;
+      text-align: center;
+    }
+    .textoBusca {
+      color: white;
+      margin-top: -10px;
+      font-size: 25px;
+      padding-left: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .scroll-content {
+      overflow-y: hidden;
+    }
+    
+    .textoOla {
+      padding-top: 25px;
+      color: white;
+      padding-left: 25px;
+    }
+    
+    }

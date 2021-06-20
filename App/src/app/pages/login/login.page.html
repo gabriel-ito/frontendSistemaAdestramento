@@ -1,0 +1,39 @@
+<ion-content class="swiper-no-swiping">
+  <div class="container top">
+  </div>
+
+
+  <ion-slides>
+    <ion-slide>
+      <div class="slide-inner ion-padding">
+        <span>Login</span>
+        
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="email" placeholder="E-mail" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="password" placeholder="Senha" [(ngModel)]="senha" name="senha"></ion-input>
+        </ion-item>
+
+        <ion-button class="ion-margin-top" (click)="entrar()" expand="block">
+          Entrar
+        </ion-button>
+
+        <ion-button class="ion-margin-top" (click)="registro()" expand="block">
+          Cadastrar
+        </ion-button>
+
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+
+  <div class="ocean">
+    <div class="waves">
+      <div class="container bottom ion-text-center">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,80 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ home }}</ion-title>
+  </ion-toolbar>
+ 
+</ion-header> -->
+
+<ion-content>
+  
+
+  <div text-left class="inicio">
+    <h4 class="textoOla">Oi {{data.nome}},</h4>
+    <br/>
+    <p class="textoBusca">O que está buscando hoje?</p>
+  </div>
+
+  <div class="botoes">
+    <button ion-button class="botao" (click)="telaDuvidas()" icon-end>
+        <br/>Dúvidas
+    </button>
+
+    <button ion-button class="botao" (click)="telaMinhasDuvidas()" icon-start>
+      Minhas<br/>dúvidas
+    </button>
+  </div>
+  <div class="botoes2">
+    <button ion-button class="botao" (click)="telaAgendar()" icon-end>
+        Agendar<br/>atendimento
+    </button>
+
+    <button ion-button class="botao" (click)="telaAgendamento()" icon-start>
+      Minha<br/>agenda
+    </button>
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+  <div>
+    <button (click)="sair()">
+        <ion-icon name="log-out"></ion-icon>
+        Sair
+    </button>
+  </div>
+</ion-toolbar>
+</ion-footer>
+
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Bem vindo, {{usuario.nome}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-slides>
+  <ion-slide>
+    <div class="slide-inner ion-padding">
+
+<ion-button class="ion-margin-top" (click)="telaDuvidas()" expand="block">
+  Dúvidas
+</ion-button>
+
+<ion-button class="ion-margin-top" (click)="telaMinhasDuvidas()" expand="block">
+  Minhas dúvidas
+</ion-button>
+
+<ion-button class="ion-margin-top" (click)="telaAgendar()" expand="block">
+  Agendar atendimento
+</ion-button>
+
+<ion-button class="ion-margin-top" (click)="telaAgendamento()" expand="block">
+  Meus agendamentos
+</ion-button>
+
+    </div>
+  </ion-slide>
+</ion-slides> -->
